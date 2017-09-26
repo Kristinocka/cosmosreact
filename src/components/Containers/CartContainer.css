@@ -1,0 +1,9 @@
+.cartContainer {
+    width: 20%;
+    padding: 20px;
+}
+.productListContainer {
+    width: 80%;
+    padding: 20px;
+    background: red;
+}
