@@ -4,15 +4,31 @@
 export default [
     {
         id: 1,
-        title: 'product 1',
-        price: 12.3,
-        photo:  'https://store-images.s-microsoft.com/image/apps.60852.13510798887971985.389f8d3b-c3c9-421f-9e83-b0e52ce8ebba.171fd689-5ebb-483b-9a6f-08d9a512019f?w=96&h=96&q=60'
+        name: 'Puf Feo biały',
+        price: 145,
+        photo: 'http://noo.ma/wp-content/uploads/2017/01/feo_bialy_drewno_jasny-350x434.jpg',
+        url: 'http://noo.ma/'
     },
     {
         id: 2,
-        title: 'product 2',
-        price: 12.3,
-        photo:  'https://store-images.s-microsoft.com/image/apps.60852.13510798887971985.389f8d3b-c3c9-421f-9e83-b0e52ce8ebba.171fd689-5ebb-483b-9a6f-08d9a512019f?w=96&h=96&q=60'
+        name: 'Puf Feo sosnowy',
+        price: 145,
+        photo: 'http://noo.ma/wp-content/uploads/2017/01/feo_drewno_jasny-350x434.jpg',
+        url: 'http://noo.ma/'
+    },
+    {
+        id: 3,
+        name: 'Sofa 2-osobowa MJUK',
+        price: 3340,
+        photo: 'http://noo.ma/wp-content/uploads/2017/01/SOFA_MJUK_2OS_ciemny-350x434.jpg',
+        url: 'http://noo.ma/'
+    },
+    {
+        id: 4,
+        name: 'Fotel MJUK',
+        price: 1455,
+        photo: 'http://noo.ma/wp-content/uploads/2017/01/FOTEL_MJUK_ciemny_2-350x434.jpg',
+        url: 'http://noo.ma/'
     }
 
 ]

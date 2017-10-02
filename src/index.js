@@ -1,20 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { combineReducers, createStore } from 'redux';
+import cartReducer from './actions/cart';
+import productsReducer from './actions/products';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import {applyMiddleware, createStore} from "redux";
-import {Provider} from 'react-redux';
-import rootReducer from './reducers/index';
+import productsData from './products/productsList';
 
-const store = createStore(
-    rootReducer
+const rootReducer = combineReducers({
+    cart: cartReducer,
+    products: productsReducer
+});
+
+let store = createStore(
+    rootReducer,
+    {
+        products: productsData // initial store values
+    },
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // for debugging
 );
 
-ReactDOM.render(
+render(
     <Provider store={store}>
         <App />
-    </Provider>
-    , document.getElementById('root'));
-registerServiceWorker();
-
+    </Provider>,
+    document.getElementById('root')
+);

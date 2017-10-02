@@ -1,0 +1,18 @@
+.product-item.single {
+    width: 23%;
+    min-width: 200px;
+    margin: 10px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: ease-out .3s;
+}
+.main-content {
+    width: 100%;
+    max-width: 80%;
+    margin:0 auto 30px;
+
+}

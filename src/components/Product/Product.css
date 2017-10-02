@@ -1,0 +1,90 @@
+.product-item.single {
+    width: 23%;
+    min-width: 200px;
+    margin: 10px;
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: ease-out .3s;
+}
+.product-item.single:hover {
+    box-shadow: 0 0 25px #eee;
+}
+.product-item.thumbnail {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.product-item.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .2s ease-in-out;
+}
+.product-item.thumbnail img:hover {
+    transform: scale(1.1);
+}
+.product-item.info {
+    margin-top: 20px;
+}
+
+.product-item.info.info-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    position: relative;
+}
+.product-item.info.info-title:after {
+    content: ' ';
+    display:block;
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background: #eee;
+    margin-top: 7px;
+}
+.product-item.info-buy {
+    position: relative;
+}
+.product-item.info-buy.price {
+    float: left;
+    padding-top: 18px;
+    font-size: 20px;
+    /*font-weight: bold;*/
+}
+.product-item.info-buy.price:after {
+    content: 'zł';
+    padding-left: 5px;
+    display: inline-block;
+
+}
+.product-item.info-buy.btn-addToCard {
+    float: right;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    transition: all .2s ease-in-out;
+}
+.btn-addToCard svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn-addToCard:hover {
+    cursor: pointer;
+}
+.btn-addToCard:hover svg path{
+    fill: #fff;
+}
+

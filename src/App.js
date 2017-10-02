@@ -1,34 +1,20 @@
 import React, {Component} from "react";
-import CartContainer from "./components/Containers/CartContainer";
 import {connect} from 'react-redux';
-import {getProducts} from "./actions/products";
+import ProductList from './Containers/ProductListContainer'
+import CartContainer from './Containers/CartContainer'
 
-class App extends Component {
-    componentWillMount() {
-        this.props.load;
-    }
+const App = () => {
+    return (
+        <div className="">
+            <CartContainer />
+            <ProductList />
 
-    render() {
-        return (
-            <CartContainer>
-                {
-                    this.props.productList.map(item => (<div><h1>{item.id || ""}</h1><img src={item.photo || ""}/></div>)
-                    )
 
-                }
-            </CartContainer>
-        )
-    }
+            <footer>
+
+            </footer>
+        </div>
+    );
 }
 
-const mapStateToProps = state => {
-    return ({
-        productList: state.products
-    })
-};
-
-const mapDispatchToProps = dispatch => ({
-    load: getProducts(dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
